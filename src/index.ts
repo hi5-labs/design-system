@@ -8,6 +8,6 @@ export * from './lib/utils'
 export * from './hooks/use-mobile'
 export * from './hooks/useAnalytics'
 
-// Export styles
-export './styles/globals.css'
-export './styles/index.css'
+// Export styles - these will be included in the build output
+import './styles/globals.css'
+import './styles/index.css'

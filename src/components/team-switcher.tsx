@@ -9,13 +9,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@/components/ui/navigation/DropdownMenu"
+} from "../navigation/DropdownMenu"
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/navigation/Sidebar"
+} from "../navigation/Sidebar"
 export function TeamSwitcher({
   teams,
 }: {

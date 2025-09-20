@@ -7,7 +7,7 @@ import {
   SidebarFooter,
   SidebarRail,
   // SidebarTrigger,
-} from "@/components/ui/navigation/Sidebar"
+} from "../navigation/Sidebar"
 import { GoBackButton } from "@/components/GoBackButton"
 
 

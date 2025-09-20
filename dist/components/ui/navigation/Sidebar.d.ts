@@ -1,6 +1,6 @@
 import * as React from "react";
 import { VariantProps } from "class-variance-authority";
-import { TooltipContent } from "@/components/ui/feedback/Tooltip";
+import { TooltipContent } from "../feedback/Tooltip";
 type SidebarContext = {
     state: "expanded" | "collapsed";
     open: boolean;
@@ -22,10 +22,10 @@ declare const Sidebar: React.ForwardRefExoticComponent<Omit<React.ClassAttribute
     variant?: "sidebar" | "floating" | "inset";
     collapsible?: "offcanvas" | "icon" | "none";
 }, "ref"> & React.RefAttributes<HTMLDivElement>>;
-declare const SidebarTrigger: React.ForwardRefExoticComponent<Omit<import("@/components/ui/form/Button").ButtonProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const SidebarTrigger: React.ForwardRefExoticComponent<Omit<import("../form/Button").ButtonProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 declare const SidebarRail: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 declare const SidebarInset: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
-declare const SidebarInput: React.ForwardRefExoticComponent<Omit<import("@/components/ui/form/fields").InputProps & React.RefAttributes<HTMLInputElement>, "ref"> & React.RefAttributes<HTMLInputElement>>;
+declare const SidebarInput: React.ForwardRefExoticComponent<Omit<import("../form/fields").InputProps & React.RefAttributes<HTMLInputElement>, "ref"> & React.RefAttributes<HTMLInputElement>>;
 declare const SidebarHeader: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
 declare const SidebarFooter: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
 declare const SidebarSeparator: React.ForwardRefExoticComponent<Omit<Omit<import("@radix-ui/react-separator").SeparatorProps & React.RefAttributes<HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;

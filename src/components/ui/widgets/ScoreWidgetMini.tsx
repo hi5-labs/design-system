@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress } from '@/components/ui/feedback/Progress';
+import { Progress } from '../feedback/Progress';
 
 interface ScoreWidgetMiniProps {
   score: number;

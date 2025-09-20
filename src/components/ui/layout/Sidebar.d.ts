@@ -1,6 +1,6 @@
 import * as React from "react";
 import { VariantProps } from "class-variance-authority";
-import { TooltipContent } from "@/components/ui/feedback/Tooltip";
+import { TooltipContent } from "../feedback/Tooltip";
 type SidebarContext = {
     state: "expanded" | "collapsed";
     open: boolean;
@@ -22,7 +22,7 @@ declare const Sidebar: React.ForwardRefExoticComponent<Omit<React.ClassAttribute
     variant?: "sidebar" | "floating" | "inset";
     collapsible?: "offcanvas" | "icon" | "none";
 }, "ref"> & React.RefAttributes<HTMLDivElement>>;
-declare const SidebarTrigger: React.ForwardRefExoticComponent<Omit<import("@/components/ui/form/Button").ButtonProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const SidebarTrigger: React.ForwardRefExoticComponent<Omit<import("../form/Button").ButtonProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 declare const SidebarRail: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 declare const SidebarInset: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
 declare const SidebarInput: React.ForwardRefExoticComponent<Omit<Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref"> & React.RefAttributes<HTMLInputElement>, "ref"> & React.RefAttributes<HTMLInputElement>>;

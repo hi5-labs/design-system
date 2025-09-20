@@ -4,19 +4,19 @@ import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { VariantProps, cva } from "class-variance-authority"
 
-import { useIsMobile } from "@/hooks/use-mobile"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/form/Button"
-import { Input } from "@/components/ui/form/fields"
-import { Separator } from "@/components/ui/layout/Separator"
-import { Sheet, SheetContent } from "@/components/ui/navigation/Sheet"
-import { Skeleton } from "@/components/ui/feedback/Skeleton"
+import { useIsMobile } from "../../../hooks/use-mobile"
+import { cn } from "../../../lib/utils"
+import { Button } from "../form/Button"
+import { Input } from "../form/fields"
+import { Separator } from "../layout/Separator"
+import { Sheet, SheetContent } from "../navigation/Sheet"
+import { Skeleton } from "../feedback/Skeleton"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/feedback/Tooltip" 
+} from "../feedback/Tooltip" 
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7

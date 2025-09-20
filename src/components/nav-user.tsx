@@ -7,20 +7,20 @@ import {
 import {
   Avatar,
   AvatarFallback, 
-} from "@/components/ui/data-display/Avatar"
+} from "../data-display/Avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/components/ui/navigation/DropdownMenu"
+} from "../navigation/DropdownMenu"
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/navigation/Sidebar"
+} from "../navigation/Sidebar"
 
 interface UserData {
   name: string | null;

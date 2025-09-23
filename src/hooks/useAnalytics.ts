@@ -1,14 +1,13 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { trackPageView, trackEvent, trackUserEngagement } from '../../lib/analytics';
+import { trackPageView, trackEvent, trackUserEngagement } from '../lib/analytics';
 
 // Hook for automatic page view tracking
 export const usePageTracking = () => {
-  const location = useLocation();
-
   useEffect(() => {
-    trackPageView(location.pathname);
-  }, [location]);
+    if (typeof window !== 'undefined') {
+      trackPageView(window.location.pathname);
+    }
+  }, []);
 };
 
 // Hook for user engagement tracking

@@ -1,4 +1,4 @@
-import { ClassValue } from 'clsx';
+import { type ClassValue } from "clsx";
 export declare function cn(...inputs: ClassValue[]): string;
 export declare function getColorForScore(score: number): string;
 export declare function getColorForTotalScore(score: number): string;
